@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light&display=swap");
+
+/* 
+
+h1: selector de etiqueta
+
+
+*/
+
+* {
+    margin: 0px; //Del borde hacia a fuera
+    padding: 0px; //Del borde hacia a dentro
+}
+
+header {
+    width: 100%;
+    height: 100vh; //Se utiliza viewport height (vh)
+    background: darkgrey;
+    margin: 0;
+    position: relative;
+}
+
+#Titulo {
+    color: tomato; //Propiedad color solo para texto
+    font-family: "Shadows Into Light", sans-serif; //Se coloca sans-serif si no encuentra Shadows Into Light
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
+    transform: translateY(50%); //Mueve un objeto a un porcentaje segun su tamaño.
+}
+
+// Inicia los estilos de los articulos
+#DivisionArticulos {
+    background: yellow;
+    width: 75%;
+    height: 75vh;
+    margin: 0px 5px;
+    float: left;
+}
+
+article {
+    background: pink;
+    margin-top: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Shadows Into Light", sans-serif;
+}
+
+.parrafoArticulo {
+    text-align: justify;
+    padding: 20px 10px;
+    font-family: "Arial", sans-serif;
+    border: 2px dotted darkmagenta;
+}
+
+aside {
+    background: blue;
+    width: calc(25% - 10px);
+    padding: 10px 0px;
+    color: white;
+    margin-top: 5px;
+    float: left;
+}
+
+img {
+    width: 20vw;
+}
+
+.publicidad {
+    text-align: center;
+    margin-top: 10px;
+}
