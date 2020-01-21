@@ -37,8 +37,8 @@ header {
 #DivisionArticulos {
     background: yellow;
     width: 75%;
-    height: 75vh;
-    margin: 0px 5px;
+    height: 90vh;
+    margin: 5px 5px;
     float: left;
 }
 
@@ -62,7 +62,7 @@ h3 {
 aside {
     background: blue;
     width: calc(25% - 10px);
-    padding: 10px 0px;
+    height: 90vh;
     color: white;
     margin-top: 5px;
     float: left;
@@ -70,9 +70,19 @@ aside {
 
 img {
     width: 20vw;
+    height: 20vh;
 }
 
 .publicidad {
     text-align: center;
     margin-top: 10px;
+}
+
+footer {
+    background: #000;
+    clear: both;
+    color: white;
+    font-family: 'Shadows Into Light';
+    height: 8vh;
+    text-align: center;
 }
