@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo|Dosis|Zhi+Mang+Xing&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background: darkgrey;
+  width: 100%;
+  height: 25vh;
+  position: relative;
+}
+
+#titulo {
+  font-family: "Dosis", sans-serif;
+  color: #000;
+  font-size: 50px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 30%;
+}
+
+.titulo-2 {
+  font-family: "Zhi Mang Xing", cursive;
+  color: lightgreen;
+}
+
+#divisionArticulos {
+  background: limegreen;
+  width: 80vw;
+  height: calc(75vh - 10px);
+  margin: 5px 5px;
+  float: left;
+}
+
+article {
+  margin: 5px 5px;
+  width: calc(40vw - 20px);
+  height: 20vh;
+  float: left;
+}
+
+h3 {
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+}
+
+.parrafoArticulo {
+  text-align: justify;
+  font-family: "Cairo", sans-serif;
+}
+
+#articulo2 {
+  height: calc(55vh - 30px);
+  width: 25vw;
+}
+
+img {
+  width: calc(55vw - 20px);
+  height: 45vh;
+  float: left;
+}
+
+aside {
+  background: blue;
+  width: calc(18vw - 15px) !important;
+  height: calc(60vh - 10px);
+  margin: 5px 5px 5px 0px;
+  float: left;
+}
+
+#publicidad1 {
+  background: limegreen;
+  height: 20vh;
+}
+
+#publicidad2 {
+  background: gray;
+  height: calc(40vh - 10px);
+}
+
+/*# sourceMappingURL=style.css.map */
