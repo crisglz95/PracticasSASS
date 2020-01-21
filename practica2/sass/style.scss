@@ -7,9 +7,12 @@
 
 header {
     background: darkgrey;
-    width: 100%;
+    width: calc(100%-10px);
     height: 25vh;
     position: relative;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #titulo {
@@ -31,8 +34,8 @@ header {
 
 #divisionArticulos {
     background: limegreen;
-    width: 80vw;
-    height: calc(75vh - 10px);
+    width: 80%;
+    height: calc(75vh - 15px);
     margin: 5px 5px;
     float: left;
 }
@@ -68,7 +71,7 @@ img {
 
 aside {
     background: blue;
-    width: calc(18vw - 15px)!important;
+    width: calc(20% - 15px)!important;
     height: calc(60vh - 10px);
     margin: 5px 5px 5px 0px;
     float: left;
