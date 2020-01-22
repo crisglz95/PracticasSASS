@@ -1,0 +1,22 @@
+.flex-container {
+    background: dodgerblue;
+    display: flex;
+    height: 80vh;
+    //flex-direction: column-reverse; //Acomodo ya sea "Column" o "Row" ademas de "reverse"
+    //flex-wrap: wrap; //Hace que el padre se ajuste al tamaño de los hijos, nowrap hace que los hijos se ajusten al padre
+    // flex-flow: column wrap; //se juntan las dos propiedades anteriores
+    justify-content: center; //Podemos acomodar los elementos hijos segun necesitemos horizontalmente: center, flex-start, flex-end, space-around, space-between 
+    //align-items: center; //Podemos alinear los elementos hijos verticalmente: center, flex-start, flex-end
+    flex-wrap: wrap;
+    align-content: center; //Podemos acomodar los elementos en base a la columna: space-between, space-around, center, flex-end
+}
+
+.flex-container>div {
+    background: gray;
+    width: 17%;
+    height: 17vh;
+    margin: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px; //Anchura de la linea
+}
