@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    background: lightgrey;
+    margin: 0px;
+    position: relative;
+}
+
+#titulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    color: gray;
+    margin: 0px;
+    position: absolute;
+    left: 3%;
+}
+
+#titulo>span {
+    color: limegreen;
+}
+
+#spanO {
+    position: relative;
+}
+
+#textO {
+    position: absolute;
+    font-size: 9px;
+    left: 25%;
+    top: 42%;
+}
+
+#subtitulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    position: absolute;
+    top: 80px;
+    left: 12%;
+}
+
+.menu {
+    width: 100%;
+    height: 5vh;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.menu>ul {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-around;
+}
+
+.menu>ul>li {
+    width: 10%;
+    list-style: none;
+    background: limegreen;
+    color: white;
+}
+
+.menu>ul>li#date {
+    width: 30%;
+    height: 5vh;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu>ul>li>a {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.imagen {
+    width: calc(100% - 10px);
+    height: 30vh;
+    margin: 5px;
+}
+
+section {
+    width: calc(100% - 20px);
+    height: 45vh;
+    margin: 10px;
+}
+
+.contenedor {
+    background: url('./../img/ciudad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hijo {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(45vh - 20px);
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.hijo>#cover {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    left: 70%;
+}
+
+.hijo>#tit-cover {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+    left: 70%;
+    top: 5%;
+}
+
+.hijo>#tit-cover span {
+    color: limegreen;
+}
+
+.hijo>p {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    left: 5%;
+    top: 80%;
+}
+
+.flex-container {
+    //background: lightseagreen;
+    display: flex;
+    height: 60vh;
+    margin: 10px;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+}
+
+.flex-container>div {
+    background: gray;
+    width: calc(20%);
+    height: calc(60vh - 20px);
+    margin: 10px 5px;
+}
+
+.flex-container>div#div1 {
+    background: #C265C5;
+}
+
+.flex-container>div#div1>#hijoDiv1>h3 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex-container>div#div1>#hijoDiv1>.circulo {
+    height: 150px;
+    width: 150px;
+    border: 8px solid white;
+    border-radius: 100px;
+    background: palevioletred;
+    position: absolute;
+    left: 6.5%;
+}
+
+.flex-container>div#div1>#hijoDiv1>.text1 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    font-size: 30px;
+    left: 8.5%;
+    top: 42%;
+}
+
+.flex-container>div#div1>#hijoDiv1>.text2 {
+    position: absolute;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    left: 6.5%;
+    top: 85%;
+}
+
+.flex-container>div#div2 {
+    background: darkslategray;
+}
+
+.flex-container>div#div2>#hijoDiv2>h3 {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.flex-container>div#div2>#hijoDiv2>h3>span {
+    color: limegreen;
+    font-size: 32px;
+}
+
+.flex-container>div#div2>#hijoDiv2>h4 {
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0px;
+}
+
+.flex-container>div#div2>#hijoDiv2>.circulo-2 {
+    height: 150px;
+    width: 150px;
+    border: 8px solid limegreen;
+    border-radius: 100px;
+    background: transparent;
+    position: absolute;
+    left: 31%;
+}
+
+.flex-container>div#div2>#hijoDiv2>.text3 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    left: 32%;
+    top: 40%;
+    text-align: center;
+}
+
+.flex-container>div#div2>#hijoDiv2>.text3 span {
+    font-size: 18px;
+}
+
+.flex-container>div#div2>#hijoDiv2>.text4 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 10px;
+    top: 70%;
+}
+
+.flex-container>div#div2>#hijoDiv2>.text5 {
+    position: absolute;
+    color: limegreen;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    top: 80%;
+    left: 33%;
+}
+
+.flex-container>div#div2>#hijoDiv2>.text6 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    top: 85%;
+    left: 30%;
+}
+
+.flex-container>div#div3 {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-container>div#div3>.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    width: 20%;
+    height: 10vh;
+    display: block;
+    border: 1px solid lime;
+}
+
+.flex-container>div#div3>#titulo {
+    width: 100%;
+    height: 15vh;
+    position: relative;
+}
+
+.flex-container>div#div3>#titulo>img {
+    position: absolute;
+    border: none;
+    width: 50px;
+    height: 50px;
+    left: 5%;
+    bottom: 70%;
+}
+
+.flex-container>div#div3>#titulo>p {
+    position: absolute;
+    font-size: 10px;
+    top: 30%;
+    left: 10%;
+}
+
+.flex-container>div#div4 {
+    background: url('./../img/hoja.jpg');
+}
+
+.flex-container>div#div4>#hijoDiv4>.textDiv4 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    //text-align: left;
+    left: 80%;
+    top: 10%;
+}
+
+.flex-container>div#div4>#hijoDiv4>.textDiv4-2 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    //text-align: left;
+    left: 80%;
+    top: 40%;
+    font-weight: bold;
+}
+
+.flex-container>div#div4>#hijoDiv4>.textDiv4-3 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    //text-align: left;
+    left: 80%;
+    top: 45%;
+}
+
+.flex-container>div#div4>#hijoDiv4>.textDiv4-4 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    //text-align: left;
+    left: 80%;
+    top: 50%;
+    font-weight: bold;
+}
+
+.flex-container>div#div4>#hijoDiv4>.textDiv4-5 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    //text-align: left;
+    left: 80%;
+    top: 55%;
+    //font-weight: bold;
+}
+
+.flex-container>div#div4>#hijoDiv4>.textDiv4-6 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    //text-align: left;
+    left: 80%;
+    top: 60%;
+    font-weight: bold;
+}
+
+.flex-container>div#div4>#hijoDiv4>.textDiv4-7 {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    //text-align: left;
+    left: 80%;
+    top: 65%;
+}
+
+.flex-container>div#div4>#hijoDiv4>.contactanos {
+    position: absolute;
+    color: green;
+    font-family: 'Raleway', sans-serif;
+    //text-align: left;
+    left: 80%;
+    top: 35%;
+    font-weight: bold;
+}
+
+.flex-container>div#div4>#hijoDiv4>.contactanos {
+    position: absolute;
+    color: green;
+    font-family: 'Raleway', sans-serif;
+    //text-align: left;
+    left: 80%;
+    top: 35%;
+    font-weight: bold;
+}
+
+.flex-container>div#div4>#hijoDiv4>.forum {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 56px;
+    //text-align: left;
+    left: 80%;
+    top: 5%;
+    font-weight: bold;
+}
+
+.flex-container>div#div4>#hijoDiv4>.forum>span {
+    color: limegreen;
+}
