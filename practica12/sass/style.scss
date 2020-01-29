@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; //Horizontal
+    align-items: center; //Vertical
+    font-family: serif;
+}
+
+.container {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .box {
+    text-align: center;
+}
+
+.container .box .icon .fa {
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.container .box .icon h4,
+.container .box .icon h3 {
+    font-weight: 400px;
+    margin: 0;
+    padding: 2px 5px;
+    font-size: 24px;
+    position: relative;
+    overflow: hidden;
+    color: transparent;
+    transition-delay: .33s;
+}
+
+.container .box .icon h4::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #00BCD4;
+    transition: 1s;
+}
+
+.container .box .icon h3::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: #9C27B0;
+    transition: 1s;
+}
+
+//~ ayuda a seleccionar un hermano
+.container .box .fa:hover~h3::before {
+    right: -100%;
+    //transition: 1s;
+}
+
+.container .box .fa:hover~h4::before {
+    left: -100%;
+    //transition: 1s;
+}
+
+.container .box .fa:hover~h4,
+.container .box .fa:hover~h3 {
+    color: #000;
+}
