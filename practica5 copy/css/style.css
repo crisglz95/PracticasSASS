@@ -1,0 +1,58 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contenedor {
+  width: 100%;
+  height: 100vh;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contenedor > .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor > .row > div {
+  width: 20vw;
+  height: 20vh;
+  border: 2px solid #FFF;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.contenedor > .row > div > span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  font-size: 30px;
+}
+
+.contenedor > .row > div:hover > img {
+  opacity: 0.4;
+  transition: 0.5s;
+}
+
+.contenedor > .row > div:hover > span {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */
