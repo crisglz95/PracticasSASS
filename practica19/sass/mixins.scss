@@ -1,0 +1,4 @@
+@mixin background-sables($Color1, $Color2) {
+    background: $Color1;
+    box-shadow: 0px 0px 80px $Color2, 0px 0px 80px $Color2, 0px 0px 80px $Color2;
+}

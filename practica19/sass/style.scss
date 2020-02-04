@@ -1,0 +1,68 @@
+@use './mixins.scss'; //Se puede utlizar alias con "as + alias"
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    & li {
+        position: relative;
+        list-style: none;
+        height: 300px;
+        width: 10px;
+        margin: 0 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            background: #262626;
+            top: -30px;
+            border-top: {
+                left-radius: 2px;
+                right-radius: 2px;
+            }
+            // border-top-left-radius: 2px;
+            // border-top-right-radius: 2px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            background: #262626;
+            bottom: -30px;
+            border-bottom: {
+                left-radius: 2px;
+                right-radius: 2px;
+            }
+        }
+        &:nth-child(1) {
+            @include mixins.background-sables(#FFD0D0, #F00);
+        }
+        &:nth-child(2) {
+            @include mixins.background-sables(#FFFFD7, #ff0);
+        }
+        &:nth-child(3) {
+            @include mixins.background-sables(#bffbbf, #0F0);
+        }
+        &:nth-child(4) {
+            @include mixins.background-sables(#acffff, #00F);
+        }
+        &:nth-child(5) {
+            @include mixins.background-sables(#bebeff, #f0f);
+        }
+        &:hover {
+            background: #9b9b9b;
+            box-shadow: none;
+        }
+    }
+}
