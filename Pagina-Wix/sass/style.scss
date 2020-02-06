@@ -168,9 +168,13 @@ body {
     & .text-nosotros {
         width: 50%;
         height: 100%;
+        // display: flex;
         & .titulo-nosotros {
-            width: 100%;
             position: relative;
+            width: 100%;
+            height: 30%;
+            margin: 0;
+            padding: 0;
             & h2 {
                 position: absolute;
                 transform: translateX(30%);
@@ -178,19 +182,147 @@ body {
                 font-size: 48px;
                 color: $colorTitulos;
                 letter-spacing: 2px;
+                left: 3%;
             }
             & .separador {
                 position: absolute;
                 width: 20%;
                 height: 100%;
                 border-bottom: 10px solid $colorPrincipal;
-                left: 25%;
-                transform: translateX(30%);
+                left: 15%;
+                transform: translateY(-25%);
+            }
+        }
+        & .contenido-nosotros {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 70%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            & p {
+                position: absolute;
+                text-align: justify;
+                font-family: $fuente;
+                left: 15%;
+                right: 10%;
             }
         }
     }
     & .imagen-nosotros {
         width: 50%;
         height: 100%;
+        background: url('./../img/Construccion.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+}
+
+.datos {
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    background: $colorPrincipal;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    &>div {
+        text-align: center;
+        font-family: $fuente;
+        width: 20%;
+        border-right: 2px solid #FFF;
+        padding: 0 25px;
+        & .cantidad {
+            color: #FFF;
+            font-size: 64px;
+            font-weight: bold;
+        }
+        & .texto-datos {
+            color: $colorServicios;
+            font-size: 24px;
+        }
+        &:nth-child(4) {
+            border: none;
+        }
+    }
+}
+
+.proyectos {
+    width: 100%;
+    height: 150vh;
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    & .titulo-proyectos {
+        width: 100%;
+        height: 20%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & h2 {
+            margin: 0;
+            font-family: $fuente;
+            font-size: 48px;
+            color: $colorTitulos;
+            letter-spacing: 2px;
+            position: relative;
+            & .separador {
+                position: absolute;
+                width: 60%;
+                height: 100%;
+                border-bottom: 10px solid $colorPrincipal;
+                left: 18%;
+                transform: translateY(-60%);
+            }
+        }
+    }
+    & .contenedor-imagenes {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        & .row {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            &>div {
+                width: 40vw;
+                height: 40vh;
+                position: relative;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    transition: 0.5s;
+                    opacity: 1;
+                }
+                & span {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 100%;
+                    text-align: center;
+                    visibility: hidden;
+                    font-size: 30px;
+                    font-family: $fuente;
+                }
+                &:hover img {
+                    opacity: 0.4;
+                    transition: .5s;
+                }
+                &:hover span {
+                    visibility: visible;
+                }
+            }
+        }
     }
 }

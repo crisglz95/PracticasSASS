@@ -161,8 +161,11 @@ body {
   height: 100%;
 }
 .nosotros .text-nosotros .titulo-nosotros {
-  width: 100%;
   position: relative;
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  padding: 0;
 }
 .nosotros .text-nosotros .titulo-nosotros h2 {
   position: absolute;
@@ -171,18 +174,146 @@ body {
   font-size: 48px;
   color: #c6c6c6;
   letter-spacing: 2px;
+  left: 3%;
 }
 .nosotros .text-nosotros .titulo-nosotros .separador {
   position: absolute;
   width: 20%;
   height: 100%;
   border-bottom: 10px solid #eccd20;
-  left: 25%;
-  transform: translateX(30%);
+  left: 15%;
+  transform: translateY(-25%);
+}
+.nosotros .text-nosotros .contenido-nosotros {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.nosotros .text-nosotros .contenido-nosotros p {
+  position: absolute;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  left: 15%;
+  right: 10%;
 }
 .nosotros .imagen-nosotros {
   width: 50%;
   height: 100%;
+  background: url("./../img/Construccion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.datos {
+  width: 100%;
+  height: 40vh;
+  margin: 0;
+  padding: 0;
+  background: #eccd20;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.datos > div {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  width: 20%;
+  border-right: 2px solid #FFF;
+  padding: 0 25px;
+}
+.datos > div .cantidad {
+  color: #FFF;
+  font-size: 64px;
+  font-weight: bold;
+}
+.datos > div .texto-datos {
+  color: #3d5975;
+  font-size: 24px;
+}
+.datos > div:nth-child(4) {
+  border: none;
+}
+
+.proyectos {
+  width: 100%;
+  height: 150vh;
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+}
+.proyectos .titulo-proyectos {
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proyectos .titulo-proyectos h2 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  color: #c6c6c6;
+  letter-spacing: 2px;
+  position: relative;
+}
+.proyectos .titulo-proyectos h2 .separador {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  border-bottom: 10px solid #eccd20;
+  left: 18%;
+  transform: translateY(-60%);
+}
+.proyectos .contenedor-imagenes {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.proyectos .contenedor-imagenes .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.proyectos .contenedor-imagenes .row > div {
+  width: 40vw;
+  height: 40vh;
+  position: relative;
+}
+.proyectos .contenedor-imagenes .row > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: 0.5s;
+  opacity: 1;
+}
+.proyectos .contenedor-imagenes .row > div span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.proyectos .contenedor-imagenes .row > div:hover img {
+  opacity: 0.4;
+  transition: 0.5s;
+}
+.proyectos .contenedor-imagenes .row > div:hover span {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */
