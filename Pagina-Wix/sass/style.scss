@@ -25,6 +25,33 @@ body {
     background: #000;
 }
 
+.fijo {
+    position: relative;
+    z-index: 5;
+    & .btn-circular {
+        width: 75px;
+        height: 75px;
+        position: fixed;
+        border-radius: 50%;
+        background: $colorPrincipal;
+        left: 90%;
+        top: 85%;
+        & a {
+            display: inline-block;
+            width: 75px;
+            height: 75px;
+            text-align: center;
+            text-decoration: none;
+            color: $colorSecundario;
+            & .fa {
+                font-size: 40px;
+                line-height: 70px;
+                left: 15px;
+            }
+        }
+    }
+}
+
 .navbar {
     padding: 0px;
     margin: 0;
