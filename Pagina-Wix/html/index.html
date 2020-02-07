@@ -8,6 +8,7 @@
     <title>Compañia de Constuccion</title>
 
     <link rel="stylesheet" href="./../css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
             <li><a href="#servicios">SERVICIOS</a></li>
             <li><a href="#nosotros">NOSOTROS</a></li>
             <li><a href="#proyectos">PROYECTOS</a></li>
-            <li><a href="">CONTACTO</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
         </ul>
     </div>
 
@@ -135,13 +136,77 @@
             </div>
         </div>
     </div>
-    <h2>
-        CLIENTES
-    </h2>
-    <h2>CONTACTO</h2>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38440441774!2d-3.819622737866014!3d40.438131081767274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses-419!2smx!4v1580408701907!5m2!1ses-419!2smx"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <div class="clientes">
+        <div class="titulo-clientes">
+            <h2>
+                CLIENTES
+                <div class="separador"></div>
+            </h2>
+        </div>
+        <div class="contenedor-logos">
+            <div class="row">
+                <img src="./../img/EXCIPIA.webp" alt="Excipia">
+                <img src="./../img/EXCIPIA.webp" alt="Tipox">
+                <img src="./../img/EXCIPIA.webp" alt="Vide">
+                <img src="./../img/EXCIPIA.webp" alt="tipox">
+                <img src="./../img/EXCIPIA.webp" alt="Excipia">
+            </div>
+        </div>
+    </div>
+
+    <div class="contacto" id="contacto">
+        <div class="titulo-contacto">
+            <h2>
+                CONTACTO
+                <div class="separador"></div>
+            </h2>
+        </div>
+        <div class="mapa-contacto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38440441774!2d-3.819622737866014!3d40.438131081767274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses-419!2smx!4v1580408701907!5m2!1ses-419!2smx"
+                width="70%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="info-contacto">
+            <div class="formulario">
+                <h3>Preguntas</h3>
+                <p>
+                    Para todo tipo de preguntas, comentarios e inquietudes; por favor llámanos: 914-135-288 o completa el formulario a continuación
+                </p>
+                <form>
+                    <input type="text" placeholder="Nombre*" required id="nameForm">
+                    <input type="text" placeholder="Email*" required id="emailForm">
+                    <input type="text" placeholder="Asunto" id="asuntoForm">
+                    <textarea id="mensajeForm" cols="40" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" id="btnForm">
+                </form>
+            </div>
+            <div class="ubicacion">
+                <h3 class="titOficina">Oficina Principal</h3>
+                <p id="txtOficina">
+                    Av. Los Rosales 122, 28021, Madrid. <br> info@misitio.com <br> Teléfono: 914-135-288 <br> Fax: 914-123-456
+                </p>
+                <h3 class="titEmpleos">Empleos</h3>
+                <p id="txtCV">
+                    Para aplicar a un trabajo en Esfera Construcciones, envía tu CV y carta de recomendación a: info@misitio.com
+                </p>
+                <h3 class="titPresupuesto">
+                    <div class="separador"></div>
+                    Recibe un presupuesto: <br> 914-135-288
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="textFooter">
+            © 2023 hecho por Esfera Construcciones. Hecho con Wix.com
+        </div>
+        <div class="iconosFooter">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+    </div>
 </body>
 
 </html>

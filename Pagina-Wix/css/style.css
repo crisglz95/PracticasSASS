@@ -316,4 +316,263 @@ body {
   visibility: visible;
 }
 
+.clientes {
+  width: 100%;
+  height: 60vh;
+  margin: 0;
+  padding: 0;
+  background: #F7F7F7;
+}
+.clientes .titulo-clientes {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clientes .titulo-clientes h2 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  color: #c6c6c6;
+  letter-spacing: 2px;
+  position: relative;
+}
+.clientes .titulo-clientes h2 .separador {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  border-bottom: 10px solid #eccd20;
+  left: 18%;
+  transform: translateY(-60%);
+}
+.clientes .contenedor-logos {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.clientes .contenedor-logos .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.clientes .contenedor-logos .row img {
+  display: block;
+  filter: grayscale(1);
+  width: 10vw;
+  transition: 0.5s;
+}
+.clientes .contenedor-logos .row img:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.contacto {
+  width: 100%;
+  height: 190vh;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+.contacto .titulo-contacto {
+  width: 100%;
+  height: 15%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto .titulo-contacto h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  color: #c6c6c6;
+  letter-spacing: 2px;
+  position: relative;
+}
+.contacto .titulo-contacto h2 .separador {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  border-bottom: 10px solid #eccd20;
+  left: 18%;
+  transform: translateY(-60%);
+}
+.contacto .mapa-contacto {
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto .info-contacto {
+  width: 100%;
+  height: 35%;
+  display: flex;
+}
+.contacto .info-contacto .formulario {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.contacto .info-contacto .formulario h3 {
+  position: absolute;
+  left: 15%;
+  font-family: "Roboto", sans-serif;
+  color: #3d5975;
+  font-size: 22px;
+}
+.contacto .info-contacto .formulario p {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 10%;
+  font-family: "Roboto", sans-serif;
+}
+.contacto .info-contacto .formulario form {
+  width: 75%;
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  font-family: "Roboto", sans-serif;
+}
+.contacto .info-contacto .formulario form input {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+  height: 25px;
+  border: none;
+  background: #F7F7F7;
+}
+.contacto .info-contacto .formulario form input#btnForm {
+  width: 20%;
+  height: 30px;
+  float: right;
+  background: #1e2d3b;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.contacto .info-contacto .formulario form textarea {
+  margin: 0;
+  display: block;
+  width: 100% !important;
+  resize: none;
+  border: none;
+  background: #F7F7F7;
+  font-family: "Roboto", sans-serif;
+}
+.contacto .info-contacto .ubicacion {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.contacto .info-contacto .ubicacion .titOficina {
+  position: absolute;
+  left: 5%;
+  font-family: "Roboto", sans-serif;
+  color: #3d5975;
+  font-size: 22px;
+}
+.contacto .info-contacto .ubicacion #txtOficina {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+.contacto .info-contacto .ubicacion .titEmpleos {
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  font-family: "Roboto", sans-serif;
+  color: #3d5975;
+  font-size: 22px;
+}
+.contacto .info-contacto .ubicacion #txtCV {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+.contacto .info-contacto .ubicacion .titPresupuesto {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  color: #3d5975;
+  letter-spacing: 2px;
+  position: relative;
+  left: 5%;
+  top: 60%;
+}
+.contacto .info-contacto .ubicacion .titPresupuesto .separador {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  border-bottom: 10px solid #eccd20;
+  transform: translateY(-110%);
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  background: #FFF;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .textFooter {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.footer .iconosFooter {
+  width: 40%;
+  height: 100%;
+}
+.footer .iconosFooter a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: #c6c6c6;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #FFF;
+}
+.footer .iconosFooter a:nth-child(1):hover {
+  background: #3b5999;
+}
+.footer .iconosFooter a:nth-child(2):hover {
+  background: #dd4b39;
+}
+.footer .iconosFooter a:nth-child(3):hover {
+  background: #0077B5;
+}
+.footer .iconosFooter a .fa {
+  line-height: 36px;
+}
+
 /*# sourceMappingURL=style.css.map */

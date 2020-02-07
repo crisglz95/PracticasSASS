@@ -3,11 +3,18 @@ $colorPrincipal: #eccd20;
 $colorSecundario: #1e2d3b;
 $colorServicios: #3d5975;
 $colorTitulos: #c6c6c6;
+//Fuentes
 $fuente: 'Roboto',
 sans-serif;
 $fuenteSecundaria: 'Century Gothic';
-//Fuentes
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+//Listas
+$colors: #3b5999,
+#dd4b39,
+#0077B5;
+$items: 1,
+2,
+3;
 html {
     scroll-behavior: smooth;
 }
@@ -322,6 +329,270 @@ body {
                 &:hover span {
                     visibility: visible;
                 }
+            }
+        }
+    }
+}
+
+.clientes {
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    background: #F7F7F7;
+    & .titulo-clientes {
+        width: 100%;
+        height: 30%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & h2 {
+            margin: 0;
+            font-family: $fuente;
+            font-size: 48px;
+            color: $colorTitulos;
+            letter-spacing: 2px;
+            position: relative;
+            & .separador {
+                position: absolute;
+                width: 60%;
+                height: 100%;
+                border-bottom: 10px solid $colorPrincipal;
+                left: 18%;
+                transform: translateY(-60%);
+            }
+        }
+    }
+    & .contenedor-logos {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        & .row {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            & img {
+                display: block;
+                filter: grayscale(1);
+                width: 10vw;
+                transition: .5s;
+                &:hover {
+                    filter: grayscale(0);
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+.contacto {
+    width: 100%;
+    height: 190vh;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    & .titulo-contacto {
+        width: 100%;
+        height: 15%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & h2 {
+            margin: 0;
+            padding: 0;
+            font-family: $fuente;
+            font-size: 48px;
+            color: $colorTitulos;
+            letter-spacing: 2px;
+            position: relative;
+            & .separador {
+                position: absolute;
+                width: 60%;
+                height: 100%;
+                border-bottom: 10px solid $colorPrincipal;
+                left: 18%;
+                transform: translateY(-60%);
+            }
+        }
+    }
+    & .mapa-contacto {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-contacto {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        & .formulario {
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            & h3 {
+                position: absolute;
+                left: 15%;
+                font-family: $fuente;
+                color: $colorServicios;
+                font-size: 22px;
+            }
+            & p {
+                position: absolute;
+                left: 15%;
+                right: 15%;
+                top: 10%;
+                font-family: $fuente;
+            }
+            & form {
+                width: 75%;
+                position: absolute;
+                left: 15%;
+                top: 30%;
+                font-family: $fuente;
+                & input {
+                    display: block;
+                    margin: 5px 0;
+                    width: 100%;
+                    height: 25px;
+                    border: none;
+                    background: #F7F7F7;
+                    &#btnForm {
+                        width: 20%;
+                        height: 30px;
+                        float: right;
+                        background: $colorSecundario;
+                        color: #FFF;
+                        font-family: $fuente;
+                        font-size: 15px;
+                    }
+                }
+                & textarea {
+                    margin: 0;
+                    display: block;
+                    width: 100%!important;
+                    resize: none;
+                    border: none;
+                    background: #F7F7F7;
+                    font-family: $fuente;
+                }
+            }
+        }
+        & .ubicacion {
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            // & h3 {
+            //     position: absolute;
+            //     left: 5%;
+            //     font-family: $fuente;
+            //     color: $colorServicios;
+            //     font-size: 22px;
+            // }
+            & .titOficina {
+                position: absolute;
+                left: 5%;
+                font-family: $fuente;
+                color: $colorServicios;
+                font-size: 22px;
+            }
+            & #txtOficina {
+                position: absolute;
+                left: 5%;
+                top: 10%;
+                font-family: $fuente;
+                color: #000;
+                font-size: 14px;
+            }
+            & .titEmpleos {
+                position: absolute;
+                left: 5%;
+                top: 25%;
+                font-family: $fuente;
+                color: $colorServicios;
+                font-size: 22px;
+            }
+            & #txtCV {
+                position: absolute;
+                left: 5%;
+                top: 35%;
+                font-family: $fuente;
+                color: #000;
+                font-size: 14px;
+            }
+            & .titPresupuesto {
+                width: 90%;
+                margin: 0;
+                padding: 0;
+                font-family: $fuente;
+                font-size: 24px;
+                color: $colorServicios;
+                letter-spacing: 2px;
+                position: relative;
+                left: 5%;
+                top: 60%;
+                & .separador {
+                    position: absolute;
+                    width: 10%;
+                    height: 100%;
+                    border-bottom: 10px solid $colorPrincipal;
+                    //left: 18%;
+                    transform: translateY(-110%);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    background: #FFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .textFooter {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $fuente;
+    }
+    .iconosFooter {
+        width: 40%;
+        height: 100%;
+        //padding: 10px 0px;
+        & a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background: $colorTitulos;
+            text-align: center;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #FFF;
+            @each $item in $items {
+                &:nth-child(#{$item}):hover {
+                    background: nth($colors, $item);
+                }
+            }
+            & .fa {
+                line-height: 36px;
             }
         }
     }
