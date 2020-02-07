@@ -36,6 +36,9 @@ body {
         background: $colorPrincipal;
         left: 90%;
         top: 85%;
+        &:hover {
+            box-shadow: 0px 0px 5px 1px #979797;
+        }
         & a {
             display: inline-block;
             width: 75px;
@@ -608,6 +611,7 @@ body {
             display: inline-block;
             width: 36px;
             height: 36px;
+            margin: 10px 10px;
             background: $colorTitulos;
             text-align: center;
             border-radius: 50%;

@@ -22,6 +22,9 @@ body {
   left: 90%;
   top: 85%;
 }
+.fijo .btn-circular:hover {
+  box-shadow: 0px 0px 5px 1px #979797;
+}
 .fijo .btn-circular a {
   display: inline-block;
   width: 75px;
@@ -583,6 +586,7 @@ body {
   display: inline-block;
   width: 36px;
   height: 36px;
+  margin: 10px 10px;
   background: #c6c6c6;
   text-align: center;
   border-radius: 50%;
